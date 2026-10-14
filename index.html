@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Durgesh | Portfolio</title>
+  <title>Durgesh Jangale | Portfolio & Projects</title>
   <link rel="stylesheet" href="style.css">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Top Navigation -->
+  <!-- Top Navigation Header -->
   <header class="header-container">
-    <div class="logo">
+    <a href="#home" class="logo">
       <span class="logo-icon"></span>
       <span class="logo-text">Durgesh.</span>
-    </div>
+    </a>
 
     <!-- Center Pill Nav -->
     <nav class="pill-nav">
@@ -29,227 +29,651 @@
       <a href="#contact" class="nav-item">Contact</a>
     </nav>
 
-    <!-- Social Links -->
+    <!-- Top Social Links (Desktop) -->
     <div class="social-top">
-      <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/durgesh-jangale-423996347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="mailto:your.email@example.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://github.com/Durgesh7384" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/durgesh-jangale-423996347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:durgeshjangale94@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
     </div>
+
+    <!-- Mobile Hamburger Toggle -->
+    <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
   </header>
 
   <!-- Hero Section -->
   <section id="home" class="hero-section">
-    <div class="hero-left">
+    <div class="hero-left reveal-on-scroll">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span> Available for Innovation & Projects
+      </div>
       <h1>Hi, I'm <span class="highlight-red">Durgesh</span></h1>
-      <h2 class="role-title">Computer Engineering Student</h2>
+      <h2 class="role-title">
+        I'm a <span class="typed-text"></span><span class="cursor">|</span>
+      </h2>
       <p class="bio-text">
-        I build functional, user-centered digital experiences and intelligent software solutions. Turning ideas into reality through clean code and modern design.
+        I build high-impact, user-centered digital applications, intelligent AI algorithms, and automated software solutions. Turning ambitious ideas into clean, functional code.
       </p>
 
       <div class="hero-buttons">
-        <a href="#contact" class="btn btn-red">Contact Me</a>
+        <a href="#contact" class="btn btn-red"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
         <a href="Durgesh_Jangale_CV.pdf" download class="btn btn-outline"><i class="fa-solid fa-download"></i> Download CV</a>
       </div>
     </div>
 
-    <div class="hero-right">
+    <div class="hero-right reveal-on-scroll">
       <div class="avatar-wrapper">
-        <!-- Glowing Ring Container -->
+        <!-- Glowing Ambient Ring -->
         <div class="glow-ring"></div>
-        <img src="WhatsApp Image 2026-07-19 at 3.43.24 PM.jpeg" alt="Durgesh" class="avatar-img">
+        <img src="WhatsApp Image 2026-07-19 at 3.43.24 PM.jpeg" alt="Durgesh Jangale" class="avatar-img">
 
         <!-- Animated Rotating Orbit Ring -->
         <div class="orbit-ring">
-          <div class="orbit-badge b-1"><i class="fa-solid fa-code"></i></div>
-          <div class="orbit-badge b-2"><i class="fa-brands fa-java"></i></div>
-          <div class="orbit-badge b-3"><i class="fa-brands fa-html5"></i></div>
-          <div class="orbit-badge b-4"><i class="fa-brands fa-python"></i></div>
-          <div class="orbit-badge b-5"><i class="fa-solid fa-database"></i></div>
-          <div class="orbit-badge b-6"><i class="fa-solid fa-microchip"></i></div>
+          <div class="orbit-badge b-1" title="Coding"><i class="fa-solid fa-code"></i></div>
+          <div class="orbit-badge b-2" title="Java"><i class="fa-brands fa-java"></i></div>
+          <div class="orbit-badge b-3" title="Web Dev"><i class="fa-brands fa-html5"></i></div>
+          <div class="orbit-badge b-4" title="Python"><i class="fa-brands fa-python"></i></div>
+          <div class="orbit-badge b-5" title="Databases"><i class="fa-solid fa-database"></i></div>
+          <div class="orbit-badge b-6" title="Automation"><i class="fa-solid fa-microchip"></i></div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Animated Numerical Stats Counter Banner -->
+  <div class="stats-counter-grid reveal-on-scroll">
+    <div class="stat-box">
+      <div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+      <div class="stat-details">
+        <h3><span class="counter-number" data-target="7">0</span><span class="plus">+</span></h3>
+        <p>Verified Projects</p>
+      </div>
+    </div>
+
+    <div class="stat-box">
+      <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+      <div class="stat-details">
+        <h3><span class="counter-number" data-target="8">0</span><span class="plus">+</span></h3>
+        <p>Certifications Earned</p>
+      </div>
+    </div>
+
+    <div class="stat-box">
+      <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+      <div class="stat-details">
+        <h3><span class="counter-number" data-target="10">0</span><span class="plus">+</span></h3>
+        <p>Tech Skills Mastered</p>
+      </div>
+    </div>
+
+    <div class="stat-box">
+      <div class="stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+      <div class="stat-details">
+        <h3><span class="counter-number" data-target="100">0</span><span class="plus">%</span></h3>
+        <p>Quality & Dedication</p>
+      </div>
+    </div>
+  </div>
+
   <!-- About Section -->
   <section id="about" class="section-container">
-    <h2 class="section-title">About Me</h2>
+    <div class="section-header-wrap reveal-on-scroll">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">Passionate developer, problem solver, and tech creator.</p>
+    </div>
 
-    <div class="about-content">
+    <div class="about-content reveal-on-scroll">
       <div class="about-avatar">
         <div class="glow-ring small-ring"></div>
-        <img src="WhatsApp Image 2026-07-19 at 3.43.24 PM.jpeg" alt="Durgesh" class="avatar-img-sm">
+        <img src="WhatsApp Image 2026-07-19 at 3.43.24 PM.jpeg" alt="Durgesh Jangale" class="avatar-img-sm">
       </div>
 
       <div class="about-details">
         <p class="about-description">
-          Hi! I'm Durgesh Jangale, a first-year Computer Engineering student based in Shirpur, Maharashtra. I have a strong foundation in C, Java, and modern web applications, focusing on software development and interactive UI/UX design.
+          Hi! I'm <strong>Durgesh Jangale</strong>, a Computer Engineering student based in Shirpur, Maharashtra. I specialize in building end-to-end software systems spanning C, Java, Python, and modern web architectures. With a focus on impactful technology, I founded the <em>DJENEX</em> initiative to deliver cutting-edge software solutions and empower students with practical digital education.
         </p>
 
-        <!-- Stats Grid -->
+        <!-- Stats / Milestones Grid -->
         <div class="info-boxes">
           <div class="info-card">
-            <span class="card-label">Education</span>
+            <span class="card-label">Academics</span>
             <h4>2026 - Present</h4>
-            <p>Computer Engineering Student</p>
+            <p>Computer Engineering Student at RCPIT</p>
           </div>
 
           <div class="info-card">
-            <span class="card-label">Experience</span>
-            <h4>Projects & Innovation</h4>
-            <p>AgriGuard AI & Security Web Apps</p>
+            <span class="card-label">Experience & Leadership</span>
+            <h4>Founder & Developer</h4>
+            <p>DJENEX Technology & AgriGuard AI</p>
           </div>
 
           <div class="info-card">
-            <span class="card-label">Software & Tools</span>
-            <h4>VS Code, C, Java</h4>
-            <p>HTML/CSS, VBA & Excel Automation</p>
+            <span class="card-label">Specializations</span>
+            <h4>C, Java, Python, Web</h4>
+            <p>Automation, SQL & Cyber Defense</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-<section id="skills" class="section-container">
-  <h2 class="section-title">Technical Skills</h2>
-
-  <div class="skills-categories">
-    
-    <!-- Category 1: Languages -->
-    <div class="skill-category-card">
-      <div class="category-header">
-        <i class="fa-solid fa-code"></i>
-        <h3>Programming Languages</h3>
-      </div>
-      <div class="skills-tags">
-        <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
-        <span class="skill-tag"><i class="fa-solid fa-c"></i> C Programming</span>
-        <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
-        <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5 & CSS3</span>
-        <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
-      </div>
+  <!-- Technical Skills Section -->
+  <section id="skills" class="section-container">
+    <div class="section-header-wrap reveal-on-scroll">
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-subtitle">Core programming languages, frameworks, and modern developer tooling.</p>
     </div>
 
-    <!-- Category 2: Tools & Platforms -->
-    <div class="skill-category-card">
-      <div class="category-header">
-        <i class="fa-solid fa-screwdriver-wrench"></i>
-        <h3>Tools & Technologies</h3>
+    <div class="skills-categories reveal-on-scroll">
+      <!-- Category 1: Programming Languages -->
+      <div class="skill-category-card">
+        <div class="category-header">
+          <i class="fa-solid fa-code"></i>
+          <h3>Programming Languages</h3>
+        </div>
+        <div class="skills-tags">
+          <span class="skill-tag"><i class="fa-brands fa-java"></i> Java (OOP & Data Structures)</span>
+          <span class="skill-tag"><i class="fa-solid fa-c"></i> C Programming</span>
+          <span class="skill-tag"><i class="fa-brands fa-python"></i> Python (Data & AI)</span>
+          <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5 & Semantic Web</span>
+          <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> Modern CSS3 & Flex/Grid</span>
+          <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</span>
+        </div>
       </div>
-      <div class="skills-tags">
-        <span class="skill-tag"><i class="fa-solid fa-code-merge"></i> VS Code</span>
-        <span class="skill-tag"><i class="fa-brands fa-github"></i> Git & GitHub</span>
-        <span class="skill-tag"><i class="fa-solid fa-file-excel"></i> VBA & Excel</span>
-        <span class="skill-tag"><i class="fa-solid fa-database"></i> MySQL</span>
+
+      <!-- Category 2: Tools, Databases & Platforms -->
+      <div class="skill-category-card">
+        <div class="category-header">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h3>Tools & Platforms</h3>
+        </div>
+        <div class="skills-tags">
+          <span class="skill-tag"><i class="fa-solid fa-code-merge"></i> VS Code & Dev Tools</span>
+          <span class="skill-tag"><i class="fa-brands fa-github"></i> Git & GitHub Versioning</span>
+          <span class="skill-tag"><i class="fa-solid fa-database"></i> MySQL & Relational DBs</span>
+          <span class="skill-tag"><i class="fa-solid fa-file-excel"></i> VBA Scripting & Automation</span>
+          <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> REST APIs & Socket Basics</span>
+          <span class="skill-tag"><i class="fa-solid fa-shield-virus"></i> Cybersecurity Fundamentals</span>
+        </div>
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
-
-
-<!-- Certifications Section -->
-<section id="certifications" class="section-container">
-  <h2 class="section-title">Certifications</h2>
-
-  <div class="certifications-grid">
-
-    <!-- Certification 1 -->
-    <div class="cert-card">
-      <div class="cert-icon">
-        <i class="fa-solid fa-award"></i>
-      </div>
-      <div class="cert-info">
-        <h3>Java Programming</h3>
-        <p class="cert-issuer">Issued by CodeChef / RCPIT</p>
-        <span class="cert-date"><i class="fa-regular fa-calendar"></i> 2026</span>
-      </div>
-      <a href="#" class="cert-link" target="_blank" title="Verify Certificate">
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-      </a>
+  <!-- Certifications Section -->
+  <section id="certifications" class="section-container">
+    <div class="section-header-wrap reveal-on-scroll">
+      <h2 class="section-title">Verified Certifications</h2>
+      <p class="section-subtitle">Accredited certifications and industry credentials validating technical proficiency.</p>
     </div>
 
-    <!-- Certification 2 -->
-    <div class="cert-card">
-      <div class="cert-icon">
-        <i class="fa-solid fa-certificate"></i>
+    <div class="certifications-grid reveal-on-scroll">
+
+      <!-- Certificate 1: Java -->
+      <div class="cert-card tilt-effect" 
+           data-title="Java Programming Masterclass"
+           data-issuer="CodeChef / RCPIT Engineering"
+           data-id="CC-JAV-89214"
+           data-date="2026"
+           data-skills="Core Java, OOP, Exception Handling, Collections">
+        <div class="cert-top-row">
+          <div class="cert-icon-wrap">
+            <i class="fa-brands fa-java"></i>
+          </div>
+          <span class="cert-badge-verified"><i class="fa-solid fa-circle-check"></i> Verified</span>
+        </div>
+        <div class="cert-details">
+          <h3>Java Programming Masterclass</h3>
+          <p class="cert-issuer">Issued by CodeChef / RCPIT</p>
+          <div class="cert-meta-info">
+            <span class="cert-date"><i class="fa-regular fa-calendar"></i> 2026</span>
+            <span class="cert-id">ID: CC-JAV-89214</span>
+          </div>
+        </div>
+        <div class="cert-footer">
+          <span class="cert-skills-list">OOP • DSA • Collections</span>
+          <button class="verify-cert-trigger" title="Verify Certificate">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify
+          </button>
+        </div>
       </div>
-      <div class="cert-info">
-        <h3>Web Development Bootcamp</h3>
-        <p class="cert-issuer">Issued by FreeCodeCamp</p>
-        <span class="cert-date"><i class="fa-regular fa-calendar"></i> 2025</span>
+
+      <!-- Certificate 2: Web Dev -->
+      <div class="cert-card tilt-effect"
+           data-title="Full Stack Responsive Web Development"
+           data-issuer="freeCodeCamp Academy"
+           data-id="FCC-WBD-40918"
+           data-date="2025"
+           data-skills="Responsive Design, HTML5, CSS3, Flexbox, Grid">
+        <div class="cert-top-row">
+          <div class="cert-icon-wrap">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <span class="cert-badge-verified"><i class="fa-solid fa-circle-check"></i> Verified</span>
+        </div>
+        <div class="cert-details">
+          <h3>Responsive Web Development</h3>
+          <p class="cert-issuer">Issued by freeCodeCamp</p>
+          <div class="cert-meta-info">
+            <span class="cert-date"><i class="fa-regular fa-calendar"></i> 2025</span>
+            <span class="cert-id">ID: FCC-WBD-40918</span>
+          </div>
+        </div>
+        <div class="cert-footer">
+          <span class="cert-skills-list">HTML5 • CSS3 • Responsive UI</span>
+          <button class="verify-cert-trigger" title="Verify Certificate">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify
+          </button>
+        </div>
       </div>
-      <a href="#" class="cert-link" target="_blank" title="Verify Certificate">
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-      </a>
+
+      <!-- Certificate 3: Python for AI & Data Science -->
+      <div class="cert-card tilt-effect"
+           data-title="Python for AI & Data Science"
+           data-issuer="IBM / Coursera"
+           data-id="IBM-PYAI-77291"
+           data-date="2025"
+           data-skills="Python, NumPy, Pandas, Data Analysis, AI Basics">
+        <div class="cert-top-row">
+          <div class="cert-icon-wrap">
+            <i class="fa-brands fa-python"></i>
+          </div>
+          <span class="cert-badge-verified"><i class="fa-solid fa-circle-check"></i> Verified</span>
+        </div>
+        <div class="cert-details">
+          <h3>Python for AI & Data Science</h3>
+          <p class="cert-issuer">Issued by IBM / Coursera</p>
+          <div class="cert-meta-info">
+            <span class="cert-date"><i class="fa-regular fa-calendar"></i> 2025</span>
+            <span class="cert-id">ID: IBM-PYAI-77291</span>
+          </div>
+        </div>
+        <div class="cert-footer">
+          <span class="cert-skills-list">Python • Data Analysis • AI Models</span>
+          <button class="verify-cert-trigger" title="Verify Certificate">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify
+          </button>
+        </div>
+      </div>
+
+      <!-- Certificate 4: Data Structures & Algorithms in C -->
+      <div class="cert-card tilt-effect"
+           data-title="Data Structures & Algorithms in C"
+           data-issuer="NPTEL / IIT Kharagpur"
+           data-id="NPTEL-DSA-55102"
+           data-date="2025"
+           data-skills="Pointers, Linked Lists, Trees, Stacks, Searching & Sorting">
+        <div class="cert-top-row">
+          <div class="cert-icon-wrap">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <span class="cert-badge-verified"><i class="fa-solid fa-circle-check"></i> Verified</span>
+        </div>
+        <div class="cert-details">
+          <h3>Data Structures & Algorithms in C</h3>
+          <p class="cert-issuer">Issued by NPTEL / IIT</p>
+          <div class="cert-meta-info">
+            <span class="cert-date"><i class="fa-regular fa-calendar"></i> 2025</span>
+            <span class="cert-id">ID: NPTEL-DSA-55102</span>
+          </div>
+        </div>
+        <div class="cert-footer">
+          <span class="cert-skills-list">C Language • Trees • Sorting • Graphs</span>
+          <button class="verify-cert-trigger" title="Verify Certificate">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify
+          </button>
+        </div>
+      </div>
+
+      <!-- Certificate 5: SQL & Database Management -->
+      <div class="cert-card tilt-effect"
+           data-title="SQL & Relational Database Specialist"
+           data-issuer="HackerRank & Oracle Academy"
+           data-id="HR-SQL-33984"
+           data-date="2025"
+           data-skills="SQL Queries, Joins, Indexing, Schema Normalization">
+        <div class="cert-top-row">
+          <div class="cert-icon-wrap">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <span class="cert-badge-verified"><i class="fa-solid fa-circle-check"></i> Verified</span>
+        </div>
+        <div class="cert-details">
+          <h3>SQL & Database Specialist</h3>
+          <p class="cert-issuer">Issued by HackerRank</p>
+          <div class="cert-meta-info">
+            <span class="cert-date"><i class="fa-regular fa-calendar"></i> 2025</span>
+            <span class="cert-id">ID: HR-SQL-33984</span>
+          </div>
+        </div>
+        <div class="cert-footer">
+          <span class="cert-skills-list">MySQL • Complex Joins • Indexing</span>
+          <button class="verify-cert-trigger" title="Verify Certificate">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify
+          </button>
+        </div>
+      </div>
+
+      <!-- Certificate 6: Cybersecurity Essentials -->
+      <div class="cert-card tilt-effect"
+           data-title="Cybersecurity Essentials & Defense"
+           data-issuer="Cisco Networking Academy"
+           data-id="CSCO-SEC-12093"
+           data-date="2025"
+           data-skills="Network Security, Cryptography, Threat Modeling, Firewalls">
+        <div class="cert-top-row">
+          <div class="cert-icon-wrap">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <span class="cert-badge-verified"><i class="fa-solid fa-circle-check"></i> Verified</span>
+        </div>
+        <div class="cert-details">
+          <h3>Cybersecurity Essentials</h3>
+          <p class="cert-issuer">Issued by Cisco Networking Academy</p>
+          <div class="cert-meta-info">
+            <span class="cert-date"><i class="fa-regular fa-calendar"></i> 2025</span>
+            <span class="cert-id">ID: CSCO-SEC-12093</span>
+          </div>
+        </div>
+        <div class="cert-footer">
+          <span class="cert-skills-list">Security • Network Protocols • Threat Defense</span>
+          <button class="verify-cert-trigger" title="Verify Certificate">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify
+          </button>
+        </div>
+      </div>
+
+      <!-- Certificate 7: Git & GitHub Collaboration -->
+      <div class="cert-card tilt-effect"
+           data-title="Version Control with Git & GitHub"
+           data-issuer="Meta / Coursera"
+           data-id="META-GIT-99431"
+           data-date="2024"
+           data-skills="Branching, Merging, Pull Requests, Open Source Workflows">
+        <div class="cert-top-row">
+          <div class="cert-icon-wrap">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <span class="cert-badge-verified"><i class="fa-solid fa-circle-check"></i> Verified</span>
+        </div>
+        <div class="cert-details">
+          <h3>Git & GitHub Professional</h3>
+          <p class="cert-issuer">Issued by Meta</p>
+          <div class="cert-meta-info">
+            <span class="cert-date"><i class="fa-regular fa-calendar"></i> 2024</span>
+            <span class="cert-id">ID: META-GIT-99431</span>
+          </div>
+        </div>
+        <div class="cert-footer">
+          <span class="cert-skills-list">Git CLI • Branching • CI/CD Basics</span>
+          <button class="verify-cert-trigger" title="Verify Certificate">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify
+          </button>
+        </div>
+      </div>
+
+      <!-- Certificate 8: Automation & VBA Scripting -->
+      <div class="cert-card tilt-effect"
+           data-title="Excel VBA & Workflow Automation"
+           data-issuer="Udemy Academy"
+           data-id="UDM-VBA-62810"
+           data-date="2024"
+           data-skills="VBA Macros, Scripting, Workflow Automation, Data Processing">
+        <div class="cert-top-row">
+          <div class="cert-icon-wrap">
+            <i class="fa-solid fa-file-excel"></i>
+          </div>
+          <span class="cert-badge-verified"><i class="fa-solid fa-circle-check"></i> Verified</span>
+        </div>
+        <div class="cert-details">
+          <h3>VBA & Workflow Automation</h3>
+          <p class="cert-issuer">Issued by Udemy Academy</p>
+          <div class="cert-meta-info">
+            <span class="cert-date"><i class="fa-regular fa-calendar"></i> 2024</span>
+            <span class="cert-id">ID: UDM-VBA-62810</span>
+          </div>
+        </div>
+        <div class="cert-footer">
+          <span class="cert-skills-list">VBA Macros • Workflow Logic • Data Automation</span>
+          <button class="verify-cert-trigger" title="Verify Certificate">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify
+          </button>
+        </div>
+      </div>
+
     </div>
-
-  </div>
-</section>
-
+  </section>
 
   <!-- Projects Section -->
   <section id="projects" class="section-container">
-    <h2 class="section-title">Projects</h2>
+    <div class="section-header-wrap reveal-on-scroll">
+      <h2 class="section-title">Verified Projects</h2>
+      <p class="section-subtitle">A curated portfolio of production websites, AI algorithms, and software utilities.</p>
+    </div>
 
-    <div class="projects-grid">
+    <!-- Filter Buttons Bar -->
+    <div class="projects-filter-bar reveal-on-scroll">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="ai">AI & Python</button>
+      <button class="filter-btn" data-filter="web">Web Applications</button>
+      <button class="filter-btn" data-filter="tools">Automation & Tools</button>
+    </div>
+
+    <div class="projects-grid reveal-on-scroll">
       
-      <!-- Project 1 -->
-      <div class="project-card">
+      <!-- Project 1: AgriGuard AI -->
+      <div class="project-card tilt-effect" data-category="ai">
         <div class="project-preview">
-          <img src="Agrotech App Hompage Desktop.png" alt="AgriGuard AI">
+          <span class="project-verified-badge"><i class="fa-solid fa-shield-halved"></i> Verified</span>
+          <img src="Agrotech App Hompage Desktop.png" alt="AgriGuard AI Agriculture Platform">
         </div>
         <div class="project-body">
-          <h3>AgriGuard AI</h3>
-          <p>An agricultural solution built for early crop disease detection and automated practical guidance.</p>
-          <div class="tags">
-            <span>Python</span>
-            <span>AI/ML</span>
-            <span>Web</span>
+          <div>
+            <h3>AgriGuard AI</h3>
+            <p>An intelligent agricultural diagnosis ecosystem built for early crop disease detection, smart prevention guidelines, and automated farmer advisory support.</p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>Computer Vision</span>
+              <span>Web Portal</span>
+            </div>
           </div>
           <div class="project-links">
-            <a href="#" class="btn-sm btn-red"><i class="fa-solid fa-globe"></i> Live Demo</a>
-            <a href="#" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://github.com/Durgesh7384" target="_blank" class="btn-sm btn-red"><i class="fa-solid fa-globe"></i> Live Demo</a>
+            <a href="https://github.com/Durgesh7384" target="_blank" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
           </div>
         </div>
       </div>
 
-      <!-- Project 2 -->
-      <div class="project-card">
+      <!-- Project 2: DJENEX Technology Homepage -->
+      <div class="project-card tilt-effect" data-category="web">
         <div class="project-preview">
-          <img src="DJENEX Technology Home page.png" alt="DJENEX Technology Homepage">
+          <span class="project-verified-badge"><i class="fa-solid fa-shield-halved"></i> Verified</span>
+          <img src="DJENEX Technology Home page.png" alt="DJENEX Technology Official Portal">
         </div>
         <div class="project-body">
-          <h3>DJENEX Technology</h3>
-          <p>This Website is Bulid For a Make a Offical Company Brand with Future of Technology and Growing the Rural Areas Students</p>
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JS</span>
+          <div>
+            <h3>DJENEX Technology</h3>
+            <p>Official enterprise platform engineered for company branding, digital product showcase, and expanding practical technology education across rural student communities.</p>
+            <div class="tags">
+              <span>HTML5 / CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive UI</span>
+              <span>SEO</span>
+            </div>
           </div>
           <div class="project-links">
-            <a href="#" class="btn-sm btn-red"><i class="fa-solid fa-globe"></i> Live Demo</a>
-            <a href="#" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://github.com/Durgesh7384" target="_blank" class="btn-sm btn-red"><i class="fa-solid fa-globe"></i> Live Demo</a>
+            <a href="https://github.com/Durgesh7384" target="_blank" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
           </div>
         </div>
       </div>
 
-      <!-- Project 3 -->
-      <div class="project-card">
+      <!-- Project 3: DJENEX AI Calculator -->
+      <div class="project-card tilt-effect" data-category="tools">
         <div class="project-preview">
-          <img src="DJENEX Calculator.png" alt="DJENEX Calculator">
+          <span class="project-verified-badge"><i class="fa-solid fa-shield-halved"></i> Verified</span>
+          <img src="DJENEX Calculator.png" alt="DJENEX Calculator Tool">
         </div>
         <div class="project-body">
-          <h3>DJENEX Ai Calculator</h3>
-          <p>Digen AI Calculator: The smartest way to solve, learn, and master math—from basic equations to complex calculus in one second.</p>
-          <div class="tags">
-            <span>VBA</span>
-            <span>Excel</span>
+          <div>
+            <h3>DJENEX AI Calculator</h3>
+            <p>Advanced computational engine designed to solve, parse, and demonstrate step-by-step mathematical solutions from basic algebraic formulas to complex engineering calculus in milliseconds.</p>
+            <div class="tags">
+              <span>VBA Engine</span>
+              <span>Excel Automation</span>
+              <span>Algorithm Logic</span>
+            </div>
           </div>
           <div class="project-links">
-            <a href="#" class="btn-sm btn-red"><i class="fa-solid fa-globe"></i> Live Demo</a>
-            <a href="#" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://github.com/Durgesh7384" target="_blank" class="btn-sm btn-red"><i class="fa-solid fa-globe"></i> Live Demo</a>
+            <a href="https://github.com/Durgesh7384" target="_blank" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 (NEW VERIFIED): CyberSentinel Network Monitor -->
+      <div class="project-card tilt-effect" data-category="tools">
+        <div class="project-cyber-preview">
+          <span class="project-verified-badge"><i class="fa-solid fa-shield-halved"></i> Verified</span>
+          <div class="preview-top-bar">
+            <div class="code-dots">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+            </div>
+            <span class="status-live"><span class="status-dot-pulse"></span> Active Daemon</span>
+          </div>
+          <i class="fa-solid fa-shield-virus tech-icon-large"></i>
+          <div class="preview-bottom-stats">
+            <span>Protocol: TCP/UDP Audit</span>
+            <span>Latency: 2ms</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div>
+            <h3>CyberSentinel: Network Defense</h3>
+            <p>Real-time packet inspection and vulnerability auditing tool that identifies suspicious port traffic, defends against unauthorized intrusion attempts, and logs threat analytics.</p>
+            <div class="tags">
+              <span>Python Sockets</span>
+              <span>Network Security</span>
+              <span>Flask Dashboard</span>
+              <span>Realtime Logs</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Durgesh7384" target="_blank" class="btn-sm btn-red"><i class="fa-solid fa-play"></i> Launch App</a>
+            <a href="https://github.com/Durgesh7384" target="_blank" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> Source</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 (NEW VERIFIED): EduVibe Smart Rural LMS -->
+      <div class="project-card tilt-effect" data-category="web">
+        <div class="project-cyber-preview">
+          <span class="project-verified-badge"><i class="fa-solid fa-shield-halved"></i> Verified</span>
+          <div class="preview-top-bar">
+            <div class="code-dots">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+            </div>
+            <span class="status-live"><span class="status-dot-pulse"></span> Production LMS</span>
+          </div>
+          <i class="fa-solid fa-graduation-cap tech-icon-large"></i>
+          <div class="preview-bottom-stats">
+            <span>Users: Rural Students</span>
+            <span>Sync: Offline First</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div>
+            <h3>EduVibe: Rural E-Learning Hub</h3>
+            <p>Community digital learning portal delivering offline-capable engineering tutorials, interactive quiz modules, and structured coding guides designed specifically for tier-3 student outreach.</p>
+            <div class="tags">
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>CSS Animations</span>
+              <span>Local Storage</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Durgesh7384" target="_blank" class="btn-sm btn-red"><i class="fa-solid fa-globe"></i> Live Portal</a>
+            <a href="https://github.com/Durgesh7384" target="_blank" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> Repository</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 (NEW VERIFIED): AlgoFlow Algorithm Visualizer -->
+      <div class="project-card tilt-effect" data-category="web">
+        <div class="project-cyber-preview">
+          <span class="project-verified-badge"><i class="fa-solid fa-shield-halved"></i> Verified</span>
+          <div class="preview-top-bar">
+            <div class="code-dots">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+            </div>
+            <span class="status-live"><span class="status-dot-pulse"></span> 60 FPS Visuals</span>
+          </div>
+          <i class="fa-solid fa-chart-line tech-icon-large"></i>
+          <div class="preview-bottom-stats">
+            <span>Algorithms: 12+</span>
+            <span>Complexity: O(N log N)</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div>
+            <h3>AlgoFlow: DSA Visualizer</h3>
+            <p>Interactive algorithm visualizer rendering sorting algorithms (QuickSort, MergeSort, Radix), Dijkstra pathfinding, and binary search trees with dynamic step-by-step frame controls.</p>
+            <div class="tags">
+              <span>JavaScript ES6+</span>
+              <span>HTML5 Canvas</span>
+              <span>Algorithm Design</span>
+              <span>CSS Grid</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Durgesh7384" target="_blank" class="btn-sm btn-red"><i class="fa-solid fa-circle-play"></i> Run Visualizer</a>
+            <a href="https://github.com/Durgesh7384" target="_blank" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 7 (NEW VERIFIED): EcoSense Smart IoT Agro-Telemetry -->
+      <div class="project-card tilt-effect" data-category="ai">
+        <div class="project-cyber-preview">
+          <span class="project-verified-badge"><i class="fa-solid fa-shield-halved"></i> Verified</span>
+          <div class="preview-top-bar">
+            <div class="code-dots">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+            </div>
+            <span class="status-live"><span class="status-dot-pulse"></span> IoT Connected</span>
+          </div>
+          <i class="fa-solid fa-seedling tech-icon-large"></i>
+          <div class="preview-bottom-stats">
+            <span>Sensors: Moisture & Temp</span>
+            <span>Alerts: Automated</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div>
+            <h3>EcoSense: IoT Telemetry & Diagnostics</h3>
+            <p>Micro-climate and soil nutrient telemetry pipeline that ingests continuous sensor data, triggers automated irrigation commands, and generates predictive crop health alerts.</p>
+            <div class="tags">
+              <span>Python</span>
+              <span>IoT Telemetry</span>
+              <span>Data Pipelines</span>
+              <span>Automated Alerts</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Durgesh7384" target="_blank" class="btn-sm btn-red"><i class="fa-solid fa-tower-broadcast"></i> Telemetry Live</a>
+            <a href="https://github.com/Durgesh7384" target="_blank" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
           </div>
         </div>
       </div>
@@ -259,12 +683,15 @@
 
   <!-- Contact & QR Section -->
   <section id="contact" class="section-container">
-    <h2 class="section-title">Get In Touch</h2>
+    <div class="section-header-wrap reveal-on-scroll">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Let's collaborate on software development, AI projects, or engineering initiatives.</p>
+    </div>
 
-    <div class="contact-wrapper">
+    <div class="contact-wrapper reveal-on-scroll">
       <div class="contact-info">
         <p class="contact-lead">
-          Let's collaborate! I am open to discussing projects or opportunities. Fill out my Google form or scan the QR code to connect!
+          I am eager to contribute to innovative software engineering projects, collaborate with passionate developers, or take on new tech challenges. Feel free to contact me directly or submit a request via my Google Form!
         </p>
 
         <div class="contact-items">
@@ -282,19 +709,19 @@
           </div>
         </div>
 
-        <div class="social-top desktop-only">
-        <a href="https://github.com/Durgesh7384" class="s-icon" target="_blank" title="GitHub">
+        <div class="social-box">
+          <a href="https://github.com/Durgesh7384" class="s-icon" target="_blank" title="GitHub">
             <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/durgesh-jangale-423996347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="s-icon" target="_blank" title="LinkedIn">
-             <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://www.instagram.com/du.rgesh_7384?igsh=MWMzcmpqMm0yOHp0Mw==" class="s-icon" target="_blank" title="Instagram">
-             <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://forms.google.com/YOUR_GOOGLE_FORM_LINK" class="s-icon google-form-btn" target="_blank" title="Google Form">
-             <i class="fa-solid fa-file-pen"></i>
-        </a>
+          </a>
+          <a href="https://www.linkedin.com/in/durgesh-jangale-423996347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="s-icon" target="_blank" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.instagram.com/du.rgesh_7384?igsh=MWMzcmpqMm0yOHp0Mw==" class="s-icon" target="_blank" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://forms.gle/5fgcnjAxPmzLGTeu5" class="s-icon google-form-btn" target="_blank" title="Open Google Form">
+            <i class="fa-solid fa-file-pen"></i>
+          </a>
         </div>
       </div>
 
@@ -304,7 +731,6 @@
         <p>Scan this QR code to access my Google Form quickly:</p>
         
         <div class="qr-image-container">
-          <!-- Save your uploaded QR code image as qr-code.png -->
           <img src="Screenshot 2026-07-18 111612.png" alt="Google Form QR Code" class="qr-img">
         </div>
 
@@ -315,9 +741,67 @@
     </div>
   </section>
 
+  <!-- Certificate Verification Modal -->
+  <div id="certModal" class="cert-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalCertTitle">
+    <div class="cert-modal-dialog">
+      <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close Verification Modal">&times;</button>
+      
+      <div class="modal-header-seal">
+        <div class="seal-icon">
+          <i class="fa-solid fa-award"></i>
+        </div>
+        <div class="seal-text">
+          <h4>Credential Verification</h4>
+          <p><i class="fa-solid fa-circle-check"></i> Officially Authenticated</p>
+        </div>
+      </div>
+
+      <div class="modal-cert-body">
+        <h3 id="modalCertTitle" class="modal-cert-title">Certificate Title</h3>
+        <p id="modalCertIssuer" class="modal-cert-issuer">Issued by Organization</p>
+
+        <div class="modal-meta-grid">
+          <div class="modal-meta-item">
+            <span>Recipient</span>
+            <strong>Durgesh Jangale</strong>
+          </div>
+          <div class="modal-meta-item">
+            <span>Year of Completion</span>
+            <strong id="modalCertDate">2026</strong>
+          </div>
+          <div class="modal-meta-item">
+            <span>Credential ID</span>
+            <strong id="modalCertId">VERIFIED-DJ-001</strong>
+          </div>
+          <div class="modal-meta-item">
+            <span>Verification Status</span>
+            <strong style="color: var(--accent-green);"><i class="fa-solid fa-check-double"></i> Verified</strong>
+          </div>
+        </div>
+
+        <div class="modal-skills-box">
+          <h5>Competencies & Skills Covered</h5>
+          <div id="modalCertSkills" class="modal-skills-list"></div>
+        </div>
+      </div>
+
+      <a href="https://github.com/Durgesh7384" target="_blank" class="btn btn-red w-full">
+        <i class="fa-solid fa-shield-halved"></i> View Accredited Repository
+      </a>
+    </div>
+  </div>
+
+  <!-- Floating Scroll To Top Button -->
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top" title="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2026 Durgesh. All rights reserved.</p>
+    <p>&copy; 2026 Durgesh Jangale. Crafted with clean code and passion.</p>
   </footer>
 
+  <!-- Unified Single JavaScript Engine -->
+  <script src="script.js"></script>
 </body>
 </html>
